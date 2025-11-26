@@ -55,6 +55,16 @@
 
 
         </plugins>
+
+
+
+            <resources>
+                <resource>
+                    <directory>src/main/resources</directory>
+                    <filtering>true</filtering>
+                </resource>
+            </resources>
+
     </build>
 
     <reporting>
@@ -101,5 +111,27 @@
         </dependency>
 
     </dependencies>
+
+
+
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <properties>
+                <database.url>dev</database.url>
+                <database.user>dev1</database.user>
+                <database.password>coucou</database.password>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>prod</id>
+            <properties>
+                <database.url>prod</database.url>
+                <database.user>prod1</database.user>
+                <database.password>coucou1</database.password>
+            </properties>
+        </profile>
+    </profiles>
 
 </project>
