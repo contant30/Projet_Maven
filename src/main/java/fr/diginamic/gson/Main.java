@@ -1,4 +1,4 @@
-package diginamic.gson;
+package fr.diginamic.gson;
 
 import com.google.gson.Gson;
 
